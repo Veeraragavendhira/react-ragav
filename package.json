@@ -1,6 +1,7 @@
 {
   "name": "react-ragav",
   "version": "0.1.0",
+<<<<<<< HEAD
   "private": true,
   "dependencies": {
     "@testing-library/dom": "^10.4.1",
@@ -36,4 +37,7 @@
       "last 1 safari version"
     ]
   }
+=======
+  "private": true
+>>>>>>> 71183181ac14ab8baf69161ca0fecd7249bcb82b
 }
