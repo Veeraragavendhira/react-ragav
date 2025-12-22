@@ -1,13 +1,13 @@
 {
   "name": "react-ragav",
   "version": "0.1.0",
-<<<<<<< HEAD
   "private": true,
   "dependencies": {
     "@testing-library/dom": "^10.4.1",
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^16.3.0",
     "@testing-library/user-event": "^13.5.0",
+    "html-react-parser": "^5.2.11",
     "react": "^19.2.1",
     "react-dom": "^19.2.1",
     "react-scripts": "5.0.1",
@@ -37,7 +37,4 @@
       "last 1 safari version"
     ]
   }
-=======
-  "private": true
->>>>>>> 71183181ac14ab8baf69161ca0fecd7249bcb82b
 }

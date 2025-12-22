@@ -9,9 +9,7 @@ function App()
     l++;
     console.log("Let: "+l);
     console.log("Let" +c);
-
   }
-
   return(
     <>
     <h1>Variable: Global: {v}</h1>
