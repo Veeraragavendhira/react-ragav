@@ -1,3 +1,228 @@
+//finding data types// array object[] json object {ulla object}
+function App(props)
+{
+  var a=props.data.sno
+  var b=props.data.sname
+  var c=props.data.issingle
+  var d=props.data.mark
+  var e=props.data.hobbies
+  return(<>
+  <h3>Type of sno:{typeof(a)}</h3>
+  <h3>Typepf sname:{typeof(b)}</h3>
+  <h3>typeof martialstatus:{typeof(c)}</h3>
+  <h3>typeof marks:{typeof(d)}</h3>
+  <h3>{Array.isArray(d)?"Its is array":"it is object json"}</h3>
+  <h3>{Array.isArray(e)?"its is array":"it is object json"}</h3>
+  
+  
+  
+  </>)
+}
+export default App
+
+
+/*
+import parse from 'html-react-parser'
+function App(props)//function components
+{
+  var ans=""
+  for(var s in props.data)
+  {
+    ans=ans+`<li>${s} = ${props.data[s]}</li>`
+    console.log(s)
+  }
+
+  return(
+    <>
+    {parse("<ol>"+ans+"</ol>")}
+    </>)
+}
+export default App
+//class component
+*/
+
+
+
+/*
+import React from "react";
+import parse from 'html-react-parser';
+class App extends React.Component
+{
+  constructor(props)
+  {
+    var ans=""
+ super(props)
+ for(var s in props.data)
+{
+  ans=ans+`<li>${s} = ${props.data[s]}</li>`
+  console.log(s)
+}  
+
+this.state={
+  res:"<ol type='I'>"+ans+"</ol>"
+}
+}
+render()
+  {
+    return(
+      <>
+      <h1>combine react state + properties</h1>
+      {parse(this.state.res)}
+      <div id="res"></div>
+     </>)
+  }
+}
+export default App
+*/
+
+
+
+
+/*
+import React from "react";
+class App extends React.Component
+{
+  constructor()
+  {
+    super()
+    this.state={
+      sno:5,
+      sname:"Sneka",
+      marks:[88,60,70,96]
+    }
+  }
+  show=()=>{
+    this.setState({sname:"Padmasneka R"})
+  }
+  dis=()=>{
+    this.setState({marks:[90,80,90,100]})
+  }
+  dis1=()=>{
+    const newmarks=[...this.state.marks]
+    newmarks[2]=45
+    this.setState({marks:newmarks})
+  }
+  render()
+  {
+    return(<>
+    <h1>This is class components</h1>
+    <h2>Serial Number:{this.state.sno}</h2>
+    <h2>Student Name:{this.state.sname}</h2>
+    <h2>studen marks:{this.state.marks }</h2>
+{this.state.marks.map((v,index)=><>mark:{index+1}={v}<br></br></>)}
+<button onClick={this.show}>Update name</button>
+<button onClick={this.dis}>update all mark</button>
+<button onClick={this.dis1}>update single mark</button>
+</>)
+  }
+}
+export default App
+*/
+
+
+
+
+
+
+
+/*
+import { aadhar, accno, place, sname } from "./mycomponents/commonvar"
+import Padmasneka from "./mycomponents/Padmasneka"
+function App()
+{
+  return(
+    <>
+    <Padmasneka/>
+    <h1>This is default App components</h1>
+    <h3>my name is :{sname}</h3>
+    <h3>my city :{place}</h3>
+    <h3>my aadhar :{aadhar}</h3>
+    <h3>my accno:{accno}</h3>
+    </>
+  )
+}
+export default App
+*/
+
+
+
+
+/*
+function App()
+{
+  var arr=[11,22,33,44,55,66,77,88,99,13,29,101,345,126,321]
+  var ma=arr[0]
+  var s=0
+  var order=arr
+  var fans=""
+  return(<>
+<h1>React loop map method</h1>
+<h2>old model</h2>
+{arr[0]}
+{arr[1]}
+{arr[2]}
+{arr[3]}
+{arr[4]}
+{arr[5]}
+{arr[6]}
+{arr[7]}
+{arr[8]}  
+<h2>New model Map(loop)</h2>
+{arr.map((v)=><>
+{v}<br></br>
+</>)}
+
+<h2>New model Map(loop)</h2>
+<ol type="I">
+{arr.map((v)=><li>{v}</li>)}
+</ol>
+
+<h2>Task sum of array</h2>
+<div style={{display:"none"}}>
+{arr.map((item)=><>{s=s+item}<br></br></>)}
+</div>
+<h3>sum of array:{s}</h3>
+
+<h3>Max of array</h3>
+<div> {arr.map((v)=><>{ma<v && <>{ma=v}</>}</>)}
+</div>
+<h3>max of array:{ma}</h3>
+
+<h2>Ascending Order</h2>
+<div style={{display:"none"}}>{order.sort((x,y)=>(x-y)
+)}</div>
+{order.map((item)=><>{item}+</>)}
+
+<h2>descending Order</h2>
+<div style={{display:"none"}}>{order.sort((x,y)=>(y-x))}</div>
+{order.map((item=><>{item} </>))}
+
+<h3>Adding Element in an array</h3>
+<div style={{display:"none"}}>{order.push(899)}</div>
+{order.map((item)=><>{item} ,</>)}
+<br></br>
+
+<h3>Remove last element in an array</h3>
+<div style={{display:"none"}}>{order.pop()}</div>
+<div style={{display:"none"}}>{order.pop()}</div>
+<div style={{display:"none"}}>{order.pop()}</div>
+{order.map((item)=><>{item},</>)}
+
+
+<h2>remove last comma or plus</h2>
+<div style={{display:"none"}}>{order.map((item)=><>{fans=fans+item+","}</>)}</div>
+{fans.slice(0,-1)}
+<
+
+
+
+/>)}
+export default App
+*/
+
+
+
+/*
 function App()
 {
   var arr=[11,22,33,44,55,66]
@@ -13,7 +238,7 @@ function App()
 )
 }
 export default App
-
+*/
 
 
 /*
