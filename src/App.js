@@ -16,8 +16,6 @@ function App()
     <>
     <h1>Variable: Global: {v}</h1>
     <h1>Does not work let & const : because they are local Variable</h1>
-
-
     </>
   )
 }
