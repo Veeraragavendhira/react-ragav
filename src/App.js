@@ -1,5 +1,173 @@
 function App()
 {
+  var arr=[11,22,33,44,55,66]
+  var[v1,
+    ,v2,...v3]=arr
+  return(
+  <>.
+  <h2>spread operator</h2>
+  <h3>index 1:{v1}</h3>
+  <h3>index 5:{v2}</h3>
+  <h3>index 6:{v3}</h3>
+  </>
+)
+}
+export default App
+
+
+
+/*
+function App()
+{
+var res="pass"
+var avg=89
+return(<>
+<h1>React nested ifelse statement</h1> 
+<h2>{
+  (res==="pass" &&
+  ((avg>=85 && "outstanding")||
+ (avg>=75 && "excellent") ||
+  (avg>=65 && "very good")||
+  "fair"))||"no grade because fail"}
+  </h2>
+</>)
+}
+export default App
+
+
+
+/*
+function App()
+{
+var unit=130
+  return(<>
+  <h1>EB bill</h1>
+  <h3>{(unit<=100 && "Rs.0")||
+  (unit>=101 && unit<=125 && "Rs.50")|| // default value 50
+  (unit>=126 && unit<=200 && "Rs."+(unit-100)*2)||
+  (unit>=201 && unit<=300 && "Rs."+(200+(unit-200)*3))||
+  (unit>=301 && unit<=400 &&"Rs."+(500+(unit-300)*4))||
+  "₹"+(900+(unit-400)*5)
+  }</h3>
+</>)
+}
+export default App
+*/
+
+
+
+
+/*function App()
+{
+  var avg=73
+  return(<>
+  <h1>React simple if else if statement</h1>
+  <h2>{(avg>=84 && "outstanding")|| (avg>=75 && "Excellent")||(avg>=65 && "very good")||
+  (avg>=56 && "fair")}</h2>
+  </>)
+}
+export default App
+*/
+
+
+
+
+
+/*
+function App()
+{
+  var num=10
+  return(<>
+  <h2>{(num>8 && "+ve")||"-ve"}</h2>
+ </>)
+}
+export default App
+
+
+
+
+
+/*
+function App()
+{
+  var num=10
+  return(<>
+  <h1>React simple if statement</h1>
+  <h2>{(num % 2===0 && "even")||"odd"}</h2>
+ </>)
+}
+export default App
+*/
+
+
+
+
+
+/*
+function App()
+{
+  var age=25
+  return(<>
+  <h1>{(age>20 && "eligible")||" not eligible"}</h1>
+  </>)
+}
+export default App
+
+
+
+
+/*
+function App()
+{
+  var mark=85
+  return(<>
+  <h1>React simple if statement</h1>
+  <h2>{(mark>34 && "PASS")||"FAIL"}</h2>
+ </>)
+}
+export default App
+*/
+
+
+/*
+*function App()
+{
+  var mark=10
+  return(<>
+  <h1>React simple if statement</h1>
+  <h2>{mark>34 && "PASS"}</h2>
+ </>)
+}
+export default App
+
+
+
+
+/*
+//commonvar 
+import Abi from "./mycomponents/Abi" 
+import { aadhar, accno, place, sname } from "./mycomponents/commonvar"
+  function App()
+  {
+    return(
+      <>
+      <Abi/>
+      <h1>this is default App components</h1>
+      <h2>my name is :{sname}</h2>
+      <h3>my city:{place}</h3>
+      <h3>my aadhar:{aadhar}</h3>
+      <h4>my accno :{accno}</h4>
+      </>
+    )
+  }
+  export default App
+*/
+
+
+
+/*
+function App()
+{
   if(true)
   {
     var v=100
@@ -18,6 +186,12 @@ function App()
   )
 }
 export default App
+/////
+*/
+
+
+
+
 
 /*
 //ARROW FUNCTION WITH PARAMETERS
