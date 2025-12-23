@@ -13,10 +13,8 @@ function App(props)
   <h3>typeof marks:{typeof(d)}</h3>
   <h3>{Array.isArray(d)?"Its is array":"it is object json"}</h3>
   <h3>{Array.isArray(e)?"its is array":"it is object json"}</h3>
-  
-  
-  
-  </>)
+  </>
+  )
 }
 export default App
 
@@ -87,7 +85,7 @@ class App extends React.Component
     super()
     this.state={
       sno:5,
-      sname:"Sneka",
+      sname:"Ragav",
       marks:[88,60,70,96]
     }
   }
@@ -127,12 +125,12 @@ export default App
 
 /*
 import { aadhar, accno, place, sname } from "./mycomponents/commonvar"
-import Padmasneka from "./mycomponents/Padmasneka"
+import Ragav from "./mycomponents/Abi"
 function App()
 {
   return(
     <>
-    <Padmasneka/>
+    <Abi/>
     <h1>This is default App components</h1>
     <h3>my name is :{sname}</h3>
     <h3>my city :{place}</h3>
