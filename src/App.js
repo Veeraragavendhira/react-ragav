@@ -1,3 +1,7 @@
+
+
+
+/*
 //finding data types// array object[] json object {ulla object}
 function App(props)
 {
@@ -17,6 +21,9 @@ function App(props)
   )
 }
 export default App
+*/
+
+
 
 
 /*
