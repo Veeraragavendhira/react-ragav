@@ -1,3 +1,16 @@
+import React from 'react'
+
+const App = () => {
+  return (
+    <div>
+      <input type="text" placeholder="Enter Name"></input><br></br>
+      <input type="password" placeholder="Enter Password"></input><br></br>
+
+    </div>
+  )
+}
+
+export default App
 
 
 
