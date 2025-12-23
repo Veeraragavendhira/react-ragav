@@ -3,13 +3,56 @@ import React from 'react'
 const App = () => {
   return (
     <div>
+      <form>
       <input type="text" placeholder="Enter Name"></input><br></br>
       <input type="password" placeholder="Enter Password"></input><br></br>
-
+      <input type="number" placeholder="Enter Number"></input><br></br>
+      <input type="email" placeholder="Enter Mail"></input><br></br>
+      <label>Select Gender</label>
+      <input type="radio" name='gen'></input>Male
+      <input type="radio" name='gen'></input>FeMale
+      <input type="radio" name='gen'></input>others
+      <br></br>
+      <label>Select Course</label>
+      <input type="checkbox" name='course'></input>HTML
+      <input type="checkbox" name='course'></input>CSS
+      <input type="checkbox" name='course'></input>JAVASCRIPT
+      <input type="checkbox" name='course'></input>PYTHON
+      <input type="checkbox" name='course'></input>JAVA
+      <input type="checkbox" name='course'></input>DJANGO
+      <input type="checkbox" name='course'></input>NONE OF THESE
+      <br></br>
+      <select>
+        <option select>SELECT MONTH</option>
+        <option>January</option>
+        <option>February</option>
+        <option>March</option>
+        <option>April</option>
+        <option>May</option>
+        <option>June</option>
+        <option>July</option>
+        <option>August</option>
+        <option>September</option>
+        <option>October</option>
+        <option>November</option>
+        <option>December</option>
+      </select>
+      <br></br>
+      select color:<input type="color" name='color'></input>
+      <br></br>
+      select Date Of Birth:<input type="date" name='Date'></input>
+      <br></br>
+      select Time:<input type="time" name='time'></input>
+      <br></br>
+      select Week:<input type="week" name='week'></input>
+      <br></br>
+      <button><s><b>CLICK ME</b></s></button>
+      <input type="submit"></input>
+      <input type="button" value="Tap me"></input>
+      </form> 
     </div>
   )
 }
-
 export default App
 
 
