@@ -1,11 +1,24 @@
+import { useState } from 'react'
 import React from 'react'
 const App = () => {
+    const[name, setName]=useState("Example: Ragav")
+    const dis=(event)=>{
+      setName(event.target.value)
+    }
+    const show=(v)=>{
+      console.log(v)
+    }
   return (
     <div>
       <form>
-      <input type="text" value="" placeholder="Enter Name"></input><br></br>
-      <input type="password" placeholder="Enter Password"></input><br></br>
+      <label>Enter Name: </label>
+      <input type="text" value={name} onChange={dis} placeholder="Enter Name"></input><br></br> 
+      
+      <label>Enter Password: </label>
+      <input type="password" onChange={()=>show("12345")} placeholder="Enter Password"></input><br></br>
+      <label>Enter Number: </label>
       <input type="number" placeholder="Enter Number"></input><br></br>
+      <label>Enter Email: </label>
       <input type="email" placeholder="Enter Mail"></input><br></br>
       <label>Select Gender</label>
       <input type="radio" name='gen'></input>Male
@@ -21,8 +34,9 @@ const App = () => {
       <input type="checkbox" name='course'></input>DJANGO
       <input type="checkbox" name='course'></input>NONE OF THESE
       <br></br>
+      <label>Select Month</label>
       <select>
-        <option select>SELECT MONTH</option>
+        <option select>Month</option>
         <option>January</option>
         <option>February</option>
         <option>March</option>
