@@ -1,10 +1,9 @@
 import React from 'react'
-
 const App = () => {
   return (
     <div>
       <form>
-      <input type="text" placeholder="Enter Name"></input><br></br>
+      <input type="text" value="" placeholder="Enter Name"></input><br></br>
       <input type="password" placeholder="Enter Password"></input><br></br>
       <input type="number" placeholder="Enter Number"></input><br></br>
       <input type="email" placeholder="Enter Mail"></input><br></br>
@@ -45,6 +44,35 @@ const App = () => {
       select Time:<input type="time" name='time'></input>
       <br></br>
       select Week:<input type="week" name='week'></input>
+      <br></br>
+      Upload Resume:<input type='file' name='file'></input>
+      <br></br>
+      <label>Type Your Address</label>
+      <textarea rows="3" cols="10"></textarea>
+      <br></br>
+      <label>List Box</label>
+      <select size="4" multiple>
+        <option>January</option>
+        <option>February</option>
+        <option>March</option>
+        <option>April</option>
+        <option>May</option>
+        <option>June</option>
+        <option>July</option>
+        <option>August</option>
+        <option>September</option>
+        <option>October</option>
+        <option>November</option>
+        <option>December</option>       
+      </select>
+      <br></br>
+      <label>VOLUME BUTTON </label>
+      <input type='range' min="0" max="100"></input>
+      <br></br>
+      <label>PROGRESS BAR</label>
+      <progress style= {{backgroundColor:"green", border:'2px solid black'}} min="0" max="100" value='80'></progress>
+      <br></br>
+      <font size="7">🤙🏻🤘🏻😊😍</font>
       <br></br>
       <button><s><b>CLICK ME</b></s></button>
       <input type="submit"></input>
