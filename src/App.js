@@ -1,23 +1,54 @@
-//Project 1
+import React from 'react'
+import { useState } from 'react'
+const App = () => {
+  const [val, setVal]=useState(0)
+  const dis=(event)=>{
+    setVal(parseInt(event.target.value)+1)
+    //setVal(parseInt(event.target.value)+5)
+
+  }
+  return (
+    <div>
+      <button onClick={dis} value={val}> you Clicked: {val} times </button>
+    </div>
+  )
+}
+export default App
+
+
+
+
+/*
+//Project 1 increment & decrement using button
 import { useState } from 'react'
 function App()
 {
   const[count,setCount]=useState(100)
   const show=(event)=>{
-  setCount(count+1)
-  }
-  const show1=(event)=>{
-  setCount(count-1)
-  }
+  if(event.target.id==="b1")
+    setCount(count-1)
+  if(event.target.id==="b2")
+    setCount(count+1)
+  if(event.target.id==="b3")
+    setCount(count-5)
+  if(event.target.id==="b4")
+    setCount(count+5) 
+}
   return(
     <>
-    <button onClick={show}>Increment by 1</button>
-    <button onClick={show1}>Decrement by 1</button>
+    <center>
+    <button id="b1" onClick={show}>Decrement by 1</button>
+    <button id="b2" onClick={show}>Increment by 1</button>
+    <br></br>
+    <button id="b3" onClick={show}>Decrement by 5</button>
+    <button id="b4" onClick={show}>Increment by 5</button>
+    <h1><div>{count}</div></h1>
+    </center>
     </>
   )
 }
 export default App
-
+*/
 
 
 
