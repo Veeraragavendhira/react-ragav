@@ -1,4 +1,32 @@
 import React from 'react'
+import { useEffect, useState} from 'react'
+const App = () => {
+  const[name, setName]=useState("Welcome Chellakutty")
+  useEffect(()=>{
+    document.title=`Hi! ${name}`
+  })
+  const dis=()=>{
+    setTimeout(()=>{
+    setName("Inga Enna soludhuu")
+  },3000)}
+  const dis1=()=>{
+    setName("Nandri Vanakkam")
+  }
+  return (
+    <div>
+      <h1>useEffect Hook</h1>
+      <button onClick={dis}>Click Here to reveal</button>
+      <button onClick={dis1}>Next</button>
+    </div>
+  )
+}
+export default App
+
+
+
+/*
+//UseHook Effect
+import React from 'react'
 import { useState } from 'react'
 const App = () => {
   const [val, setVal]=useState(0)
@@ -14,7 +42,7 @@ const App = () => {
   )
 }
 export default App
-
+*/
 
 
 
