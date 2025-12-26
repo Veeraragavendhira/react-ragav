@@ -1,3 +1,30 @@
+//Project 1
+import { useState } from 'react'
+function App()
+{
+  const[count,setCount]=useState(100)
+  const show=(event)=>{
+  setCount(count+1)
+  }
+  const show1=(event)=>{
+  setCount(count-1)
+  }
+  return(
+    <>
+    <button onClick={show}>Increment by 1</button>
+    <button onClick={show1}>Decrement by 1</button>
+    </>
+  )
+}
+export default App
+
+
+
+
+
+
+/*
+//function and button and option
 import { useState } from 'react'
 import React from 'react'
 const App = () => {
@@ -55,7 +82,7 @@ const App = () => {
       <br></br>
       select Date Of Birth:<input type="date" name='Date'></input>
       <br></br>
-      select Time:<input type="time" name='time'></input>
+      select Time:<input type="time" name='time'></input>nb
       <br></br>
       select Week:<input type="week" name='week'></input>
       <br></br>
@@ -96,7 +123,7 @@ const App = () => {
   )
 }
 export default App
-
+*/
 
 
 /*
