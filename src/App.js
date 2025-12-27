@@ -1,4 +1,138 @@
 import React from 'react'
+import "./App.css"
+const App = () => {
+  return (
+    <div id='out' align="center">
+    <div id="in">
+    <font size="8">🔑🗝🔑</font>
+        <h2>ADMIN PANEL</h2> 
+        <input type='text' placeholder='Username'></input>
+        <input type='password' placeholder='Password'></input>
+        <p align="right"><button>LOGIN</button></p>     
+      </div>
+    </div>
+  )
+}
+export default App
+
+
+
+
+
+
+
+/*import React from 'react';
+export default function App() {
+  return (
+    <div style={{
+      backgroundColor: '#ee3001ff',
+      height: '100%',
+      width: '100%',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      margin: 0,
+      fontFamily: 'times new roman'
+    }}>
+
+      <div style={{
+        backgroundColor: '#050505ff',
+        padding: '50px 40px',
+        borderRadius: '5px',
+        width: '320px',
+        height: '100%',
+        textAlign: 'center',
+        boxShadow: '0 15px 35px rgba(206, 6, 6, 0.3)'
+      }}>
+
+        
+        <h2 style={{
+          color: 'white',
+          letterSpacing: '4px',
+          fontSize: '1.2rem',
+          margin: '0 0 40px 0',
+          fontWeight: 'bold'
+        }}>
+          ADMIN LOGIN
+        </h2>
+
+        <form style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
+          <input 
+            type="text" 
+            placeholder="USERNAME" 
+            style={{
+              background: 'transparent',
+              border: 'none',
+              borderBottom: '1px solid #444',
+              color: 'white',
+              padding: '10px 0',
+              outline: 'none',
+              fontSize: '12px'
+            }} 
+          />
+          <input 
+            type="password" 
+            placeholder="PASSWORD" 
+            style={{
+              background: 'transparent',
+              border: 'none',
+              borderBottom: '1px solid #aa2f2fff',
+              color: 'white',
+              padding: '10px 0',
+              outline: 'none',
+              fontSize: '12px'
+            }} 
+          />
+          
+        
+          <div style={{ display: 'flex', justifyContent: 'flex-end', marginTop: '10px' }}>
+            <button type="button" style={{
+              background: 'yellow',
+              border: '1px solid #b30707ff',
+              color: '#df1010ff',
+              padding: '6px 20px',
+              cursor: 'pointer',
+              fontSize: '11px',
+              fontWeight: 'bold'
+            }}>
+              LOGIN
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  );
+}
+*/
+
+/*import React from 'react'
+import { useEffect } from 'react'
+const App = () => {
+  useEffect(()=>{
+    document.title=`Login Form`
+  })
+  return (
+    <div style={
+      {
+        display:"flex",
+        alignItems:"center",
+      }
+    }>x
+      <form>
+      <label>Enter Name: </label>
+      <input type="text" placeholder="Enter Name"></input><br></br>    
+      <label>Enter Password: </label>
+      <input type="password" placeholder="Enter Password"></input><br></br>
+      <input type="button" value="Login"></input>
+    </form>
+    </div>
+  )
+}
+export default App
+*/
+
+/*
+import React from 'react'
 import { useEffect, useState} from 'react'
 const App = () => {
   const[name, setName]=useState("Welcome Chellakutty")
@@ -21,7 +155,7 @@ const App = () => {
   )
 }
 export default App
-
+*/
 
 
 /*

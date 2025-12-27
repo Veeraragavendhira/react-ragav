@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,53 @@
   to {
     transform: rotate(360deg);
   }
+}
+ */
+h2{
+  font-size: 30px;
+  font-family:'Times New Roman', Times, serif;
+  background-color: black;
+  color: yellow;
+  border: 10px white;
+  padding: 5px;
+}
+#out{
+  width: 50%;
+  box-shadow: 10px 10px 10px 10px rgb(15, 15, 15);
+  border-radius: 50px;
+  background-color:rgb(18, 230, 215);
+  transform: translate(50%, 50%); 
+} 
+input.button{
+  margin-bottom: 40%;
+  display: block;
+}
+input{
+  display: block;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 2px double
+   black;
+  font-size: 30px;
+  padding: 30px;
+  width: 75%;
+  text-align: center;
+  
+}
+p{  
+  padding: 40px;
+  margin-right: 50px;
+  margin-left: 50px;
+  font-size: 10px;
+}
+button{
+  font-size: 40px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bolder;  
+}
+button:hover{
+  cursor: pointer;
+  color: rgb(24, 212, 198);
+  background-color: black;
 }
